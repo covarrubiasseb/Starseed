@@ -5,6 +5,15 @@
 /.pnp
 .pnp.js
 
+# template styles
+/public/css
+
+# image files
+*.ico
+*.svg
+*.png
+*.jpg
+
 # testing
 /coverage
 
