@@ -1,8 +1,11 @@
 import './App.css';
 
 function App() {
+
   return (
+
     <div className="App" id="page-top">
+
         <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div className="container px-4 px-lg-5">
                 <a className="navbar-brand" href="#page-top">Start Bootstrap</a>
@@ -14,22 +17,40 @@ function App() {
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
                         <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#signup">Contact</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <header className="masthead">
-            <div className="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div className="d-flex justify-content-center">
-                    <div className="text-center">
-                        <h1 className="mx-auto my-0 text-uppercase">Grayscale</h1>
-                        <h2 className="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-                        <a className="btn btn-primary" href="#about">Get Started</a>
+
+        <header className="masthead signup-section" id="signup">
+            <div className="container px-4 py-5 px-lg-5">
+                <div className="row gx-4 gx-lg-5">
+                    <div className="col-md-10 col-lg-8 mx-auto text-center">
+                        <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 className="text-white mb-5">Subscribe to receive updates!</h2>
+                        <form className="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div className="row input-group-newsletter">
+                                <div className="col"><input className="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div className="col-auto"><button className="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                            </div>
+                            <div className="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                            <div className="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <div className="d-none" id="submitSuccessMessage">
+                                <div className="text-center mb-3 mt-2 text-white">
+                                    <div className="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <div className="d-none" id="submitErrorMessage"><div className="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
                     </div>
                 </div>
             </div>
         </header>
+
         <section className="about-section text-center" id="about">
             <div className="container px-4 px-lg-5">
                 <div className="row gx-4 gx-lg-5 justify-content-center">
@@ -45,6 +66,7 @@ function App() {
                 <img className="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
+
         <section className="projects-section bg-light" id="projects">
             <div className="container px-4 px-lg-5">
                 <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
@@ -86,34 +108,8 @@ function App() {
                 </div>
             </div>
         </section>
-        <section className="signup-section" id="signup">
-            <div className="container px-4 px-lg-5">
-                <div className="row gx-4 gx-lg-5">
-                    <div className="col-md-10 col-lg-8 mx-auto text-center">
-                        <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 className="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form className="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <div className="row input-group-newsletter">
-                                <div className="col"><input className="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div className="col-auto"><button className="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div className="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div className="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <div className="d-none" id="submitSuccessMessage">
-                                <div className="text-center mb-3 mt-2 text-white">
-                                    <div className="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <div className="d-none" id="submitErrorMessage"><div className="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section className="contact-section bg-black">
+
+        <section className="contact-section bg-black" id="contact">
             <div className="container px-4 px-lg-5">
                 <div className="row gx-4 gx-lg-5">
                     <div className="col-md-4 mb-3 mb-md-0">
@@ -154,9 +150,12 @@ function App() {
                 </div>
             </div>
         </section>
+
         <footer className="footer bg-black small text-center text-white-50"><div className="container px-4 px-lg-5">Copyright &copy; Your Website 2022</div></footer>
     </div>
+
   );
+
 }
 
 export default App;
