@@ -7,8 +7,10 @@ function App() {
     <div className="App" id="page-top">
 
         <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div className="container px-4 px-lg-5">
-                <a className="navbar-brand" href="#page-top">Start Bootstrap</a>
+            <div className="container px-4 px-lg-5 py-0">
+                <a className="navbar-brand" href="#page-top">
+                    <img className="border-0 rounded" src="/assets/img/logo-home.jpg" alt="" width="64" height="56"/>
+                </a>
                 <button className="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i className="fas fa-bars"></i>
