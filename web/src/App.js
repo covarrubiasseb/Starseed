@@ -29,9 +29,12 @@ function App() {
             <div className="container px-4 py-5 px-lg-5">
                 <div className="row gx-4 gx-lg-5">
                     <div className="col-md-10 col-lg-8 mx-auto">
-{/*                        <div class="row">
-                            <img className="mb-4 border rounded shadow p-0" src="/assets/img/logo-main.jpg" alt="" width="640" height="480" />
-                        </div>*/}
+                        <div>
+                            <img className="float-start me-3 border rounded shadow p-0" src="/assets/img/logo-main.jpg" alt="" width="160" height="160" />
+                            <p className="text-white ps-2">Example text for a description about this website.Example text for a description about this website.Example text for a description about this website.
+                            Example text for a description about this website.Example text for a description about this website.Example text for a description about this website.
+                            Example text for a description about this website.Example text for a description about this website.Example text for a description about this website.</p>
+                        </div>
                         <form className="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <div className="row input-group-newsletter">
                                 <div className="col"><input className="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
